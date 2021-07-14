@@ -223,6 +223,8 @@ header {
 .photo img {
     width: 100%;
 }
+
+/* /// Video gallery /// */
 #videos {
     padding-bottom: 70px;
 }
@@ -282,6 +284,7 @@ header {
 
 /* //// Media Queries /// */
 
+/* /// Mobile Devices /// */
 @media only screen and (max-width: 547px) {
     .container {
         width: 95%;
@@ -290,6 +293,8 @@ header {
     .menu ul {
         display: none;
     }
+
+    /* /// Hero Section ///  */
     #hero {
         height: auto;
     }
@@ -297,8 +302,8 @@ header {
         grid-template-columns: repeat(1, 1fr);
     }
     .hero-heading {
-        font-size: 5.6rem;
-        line-height: 7rem;
+        font-size: 3.6rem;
+        line-height: 5rem;
         margin-left: 16px;
         margin-right: 66px;
     }
@@ -330,20 +335,40 @@ header {
     .player-info {
         text-align: left;
     }
+
+    /* /// Watch Highlight ///  */
     #watch-highlight {
         padding: 60px 0;
+    }
+    .watch-info {
+        align-items: center;
+    }
+    .watch-info h2 {
+        font-size: 3.8rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .watch-info p {
+        text-align: center;
     }
     .watch-hlight {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
     }
 
+    /* /// Photo Gallery ///  */
+    .section-heading {
+        font-size: 3.2rem;
+        margin: 15px 0;
+    }
     .photo-gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 15px;
         column-gap: 15px;
     }
+
+    /* /// Video Gallery ///  */
     .video-gallery {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 15px;
@@ -351,11 +376,19 @@ header {
     .video iframe {
         height: 286px;
     }
+
+    /* //Footer //  */
+
     .footer-logo {
-        width: 400px;
+        width: 263px;
         text-align: center;
     }
+    .copyright p {
+        font-size: 1.6rem;
+    }
 }
+
+/*///// Tablet Devices //// */
 
 @media (min-width: 547px) and (max-width: 768px) {
     .container {
@@ -365,6 +398,8 @@ header {
     .menu ul {
         display: none;
     }
+
+    /* /// Hero Section ///  */
     #hero {
         height: auto;
     }
@@ -391,6 +426,8 @@ header {
         text-align: left;
     }
 
+    /* /// Watch Highlight ///  */
+
     #watch-highlight {
         padding: 100px 0;
     }
@@ -399,19 +436,33 @@ header {
         row-gap: 30px;
     }
 
+    /* /// Photo Gallery ///  */
     .photo-gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 15px;
         column-gap: 15px;
     }
+
+    /* /// Video Gallery ///  */
     .video-gallery {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 15px;
     }
 
+    /* /// Footer CSS ///  */
+
     .footer-logo {
         width: 420px;
         text-align: center;
+    }
+}
+
+/*//// laptop and medium devices //// */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
     }
 }
