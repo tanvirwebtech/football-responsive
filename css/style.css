@@ -1,0 +1,417 @@
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 10px;
+}
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common CSS End  */
+
+/* Header CSS  */
+
+header {
+    height: 94px;
+    background-color: #2d25a0;
+}
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu-item a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 36px;
+}
+.menu-item a:hover {
+    color: #e02c6d;
+    transition: color 0.3s;
+}
+.login-button a {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px 24px;
+    background: #e02c6d;
+}
+.login-icon {
+    margin-right: 8px;
+}
+
+/* Hero CSS  */
+
+#hero {
+    background: #2d25a0;
+    height: 677px;
+    margin-top: -94px;
+}
+.hero-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero-info {
+    display: flex;
+    height: 677px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hero-heading {
+    font-size: 6.4rem;
+    line-height: 8rem;
+    font-weight: 700;
+    color: #fff;
+}
+.watch-live-button {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px 24px;
+    background: #e02c6d;
+    margin-top: 27px;
+}
+.arrow-icon {
+    margin-left: 8px;
+}
+.watch-live-button:hover .arrow-icon {
+    animation: arrow 0.5s ease 3;
+    position: relative;
+}
+@keyframes arrow {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 10px;
+    }
+}
+.hero-thumb {
+    display: flex;
+    align-items: center;
+}
+.hero-thumb img {
+    width: 100%;
+}
+#hero:hover .hero-thumb > img {
+    animation: hero 1s linear infinite alternate;
+
+    transition: animation 0.3s;
+}
+@keyframes hero {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+/* Players Section CSS */
+
+.all-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    grid-column-gap: 30px;
+}
+#players {
+    margin-top: 70px;
+}
+.player {
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+}
+
+.player img {
+    width: 90%;
+    margin: 15px;
+}
+.player-name {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin: 16px 15px 10px 15px;
+}
+.player-info {
+    color: #6c6c6c;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+/* Watch Hightight CSS  */
+
+#watch-highlight {
+    padding: 150px 0;
+}
+.watch-hlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.watch-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+.watch-info h2 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: #0a0826;
+}
+.watch-info p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #6c6c6c;
+}
+.watch-thumb img {
+    width: 100%;
+}
+
+/* Gallery CSS */
+#gallery {
+    padding-bottom: 60px;
+}
+.section-heading {
+    font-size: 4.2rem;
+    margin: 20px 0;
+}
+.photo-gallery,
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 25px;
+}
+.photo img {
+    width: 100%;
+}
+#videos {
+    padding-bottom: 70px;
+}
+.video {
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+}
+.video iframe {
+    width: 100%;
+    height: 188px;
+}
+.video-title {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.video-des {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: #6c6c6c;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+}
+/* Footer CSS  */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.footer-logo {
+    width: 480px;
+}
+.footer-logo img {
+    width: 100%;
+}
+.social-media a {
+    font-size: 1.8rem;
+    color: #969bab;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.social-media a:hover {
+    font-size: 1.8rem;
+    color: #2d25a0;
+}
+
+.copyright p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 20px;
+    color: #000;
+}
+
+/* //// Media Queries /// */
+
+@media only screen and (max-width: 547px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .menu ul {
+        display: none;
+    }
+    #hero {
+        height: auto;
+    }
+    .hero-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero-heading {
+        font-size: 5.6rem;
+        line-height: 7rem;
+        margin-left: 16px;
+        margin-right: 66px;
+    }
+    .hero-info {
+        height: 405px;
+        margin-top: 50px;
+    }
+    .watch-live-button {
+        margin-left: 16px;
+    }
+    .hero-thumb {
+        justify-content: center;
+        padding-bottom: 63px;
+    }
+    .hero-thumb img {
+        width: 90%;
+    }
+
+    /* ////// Players ///// */
+    .all-players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        text-align: center;
+    }
+    .player-name {
+        text-align: left;
+    }
+    .player-info {
+        text-align: left;
+    }
+    #watch-highlight {
+        padding: 60px 0;
+    }
+    .watch-hlight {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .video-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+    }
+    .video iframe {
+        height: 286px;
+    }
+    .footer-logo {
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 547px) and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .menu ul {
+        display: none;
+    }
+    #hero {
+        height: auto;
+    }
+    .hero-info {
+        margin-top: 60px;
+        height: 500px;
+    }
+    .hero-heading {
+        font-size: 5.4rem;
+        line-height: 7rem;
+    }
+
+    /* ////// Players ///// */
+    .all-players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        text-align: center;
+    }
+    .player-name {
+        text-align: left;
+    }
+    .player-info {
+        text-align: left;
+    }
+
+    #watch-highlight {
+        padding: 100px 0;
+    }
+    .watch-hlight {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+
+    .footer-logo {
+        width: 420px;
+        text-align: center;
+    }
+}
